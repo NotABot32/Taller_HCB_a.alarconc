@@ -1,0 +1,78 @@
+/* Add your styles here */
+.encabezado {
+  grid-area: encabezado;
+  position: absolute;
+  top: 30px;
+  left: 300px;
+  color: crimson;
+  text-align: center;
+  font-size: 100px;
+  margin: 0;
+  vertical-align: mid;
+}
+h7 {
+  font-weight:normal; 
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+.foto {
+  grid-area: foto;
+}
+ul {
+  list-style: none;
+}
+li::before {
+  content: '•';
+  color: red;
+  display: inline-block;
+  width: 25px;
+  margin-left: -80px;
+}
+.lista {
+  grid-area: lista;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  list-style: none;
+  font-weight: normal;
+  }
+
+.parrafo { 
+  grid-area: parrafo;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: cnter;
+  padding: 20px ;
+
+font-size: 45px; }
+ 
+body{ 
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+   
+}   
+.container  {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-areas:
+    'foto encabezado encabezado encabezado encabezado encabezado'
+    'lista lista parrafo parrafo parrafo parrafo'
+    'lista lista parrafo parrafo parrafo parrafo';
+    
+  grid-gap: 10px;
+  grid-template-rows: fit-content(100%);
+  background-image:url(https://images.squarespace-cdn.com/content/v1/53ac6978e4b0af1e23e9b906/1535651253871-VQOQBRVC7V1LDCEWEJRP/ke17ZwdGBToddI8pDm48kCWy-YR987KRFOzab9qR9J57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0k9kZPbuygN4RSDPe_G5PO-kMvndOFFB0x1scazKVRHtSgNdKeZ-gYZf6lRjnxVrcg/IMG_2662.jpg?format=2500w);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
